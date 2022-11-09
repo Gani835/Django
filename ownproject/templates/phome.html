@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 130px;
+            height: 150px;
+        }
+        img:hover{
+            transform: translateY(-5px);
+            transition: transform 0.8s;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form action="" method="POST">
+            {% for prd in ProdInfo %}
+                <h5>{{prd.ProdName}}</h5>
+                price-{{prd.ProdPrice}}&nbsp;rs
+            {% endfor %} <br><br>
+
+            {% if ProdInfo.has_previous %}
+                <a href="?page={{ProdInfo.previous_page_number}}">Previous</a>
+            {% endif %}
+
+            {{ProdInfo.number}}   
+    
+            {% if ProdInfo.has_next %}
+                <a href="?page={{ProdInfo.next_page_number}}">Next</a>
+            {% endif %}
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "git.allowNoVerifyCommit": false,
+    "git.autorefresh": true,
+    "git.confirmEmptyCommits": true,
+    "git.confirmForcePush": true,
+    "git.confirmNoVerifyCommit": true,
+    "git.enabled": true
+}

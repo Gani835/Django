@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Login page</title>
+            <body style='background-color:aqua;'>
+                <center>
+                <marquee style='font-size:30px;color:maroon;'>Welcome to the User login page. . . .</marquee>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <h3 style='font-size:20px;'>User login Page . . . .</h3>
+                    <input type='text' name="username" placeholder="Enter User Name. . . ."></br></br>
+                    <input type='password' name="password" placeholder="Enter Password. . . ."></br></br>
+                    <input type="submit" name='login'>   
+                </form>
+                <h3>Are you New user </h3> <a href="{% url 'createuser' %}">Signup</a>
+            </center>
+            </body>
+    </head>
+</html>

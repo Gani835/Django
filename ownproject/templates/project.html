@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css\own.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="head">
+        <header>
+            <img src="{% static 'images\logo2.jpg' %}">
+            <h2>Hello Guest!</h2>
+            <input type="search"><a href="#"><i class="fa fa-search">Search</i></a>
+        </header>
+    </div><br><br>
+     
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{prodinfo.as_p}}
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>

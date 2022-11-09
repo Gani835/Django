@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.head img{
+    width: 10%;
+    
+}
+.head{
+    background:grey;
+}
+.head h2{
+    color: white;
+}
+.head input{
+    width: 20%;
+}
+.fa-search{
+    color:black;
+    width: 30px;
+}

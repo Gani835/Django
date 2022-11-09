@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        img{
+            width:400px;
+            height:300px;
+
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'css\main.css' %}">
+</head>
+<body>
+    <nav>
+        <label class="logo">Hello User</label>
+        <ul>
+            <li><a class='active' href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul><br><br><br>
+        </nav><br><br><br>
+    <center><img src="{% static 'images\banana juice.jpg' %}" alt=""></center>
+</body>
+</html>

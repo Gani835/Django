@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <title>E-COMMERCE WEBSITE</title>
+<head>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            list-style-type: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #34495e;
+        }
+        nav{
+            height:60px;
+            width:100%;
+            background-color: #75808b;
+            position: sticky;
+            top: 0px;
+        }
+        label.logo{
+            font-size: 30px;
+            font-weight: bold;
+            color:white;
+            padding:30px;
+            line-height: 60px;
+        }
+        nav ul{
+            float: right;
+            margin-right: 40px;
+        }
+        nav li{
+            display: inline-block;
+            margin:0 8px;
+            line-height: 60px;
+        }
+        nav a{
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+            border: 1px solid transparent;
+            padding: 7px 10px;
+            border-radius:3px ;
+        }
+        a.active,a:hover{
+            border:1px solid white;
+            transition: .5s;
+        }
+        img{
+            width:230px;
+            height:200px;
+            border:2px solid white;
+            padding:5px;
+            margin: 20px;
+            
+
+        }
+        p,h3{color:white;text-align: center;}
+        div{
+            float:left;
+        }
+        a{
+            color: white;
+            border: 2px solid white;
+        }
+        
+        ul li ul li{
+            display: none;
+        }
+        ul li:hover ul li{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <label class="logo">Hello User</label>
+    <ul>
+        <li><a class='active' href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="usersignuppage" style="text-transform:capitalize">Logout</a></li>
+    </ul><br><br><br>
+    </nav><br><br><br>
+    <center>
+        <input type="search" name="search" style="width:20%;height:35px;font-size:20px;"> &nbsp;
+        <a href="" style="color:white;border:1px solid white;font-size:20px;">Search</a><br><br><br>
+    </center>
+    <form action="" method="POST">
+        <center>
+
+        <!--For view the columns from frontend
+
+            {{juicesform.as_p}}
+            <input type="submit" value="Save">-->
+        
+            {% for prd in juicesinfo %}
+                <img src="{{prd.JuiceImage.url}}"><br>
+                <h3>{{prd.JuiceId}}</h3><br>
+                <h3>{{prd.JuiceName}}</h3><br>
+                <h3>Price -{{prd.JuicePrice}} &nbsp;rs</h3><br>
+            {% endfor %}
+     
+        <!--For doing the Pagination-->
+
+            {% if juicesinfo.has_previous %}
+                <a href="?page={{juicesinfo.previous_page_number}}">Previous</a>
+            {% endif %} &nbsp;&nbsp;
+
+            {{juicesinfo.number}} &nbsp;&nbsp;
+
+            {% if juicesinfo.has_next %}
+                <a href="?page={{juicesinfo.next_page_number}}">Next</a>
+            {% endif %}
+    </center>
+    </form>
+</body>
+</html>

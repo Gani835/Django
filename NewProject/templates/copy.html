@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    body{
+        background-color: #34495e;
+    }
+    nav{
+        height:60px;
+        width:100%;
+        background-color: #75808b;
+    }
+    label.logo{
+        font-size: 30px;
+        font-weight: bold;
+        color:white;
+        padding:30px;
+        line-height: 60px;
+    }
+    nav ul{
+        float:right;
+        margin-right: 40px;
+    }
+    nav li{
+        display: inline-block;
+        margin:0 8px;
+        line-height: 60px;
+    }
+    nav a{
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        padding: 7px 10px;
+        border-radius:3px ;
+    }
+    a.active,a:hover{
+        border:1px solid white;
+        transition: .5s;
+    }
+    fieldset{
+            
+        width: 20%;
+        border-radius: 5px;
+    }
+    legend{
+        color:white;font-size:20px;font-weight:bold;
+    }
+    label{
+        font-size: 20px;
+        color: white;
+    }
+    input{
+        width:250px;
+        height:25px;
+        border: 2px solid black;
+        border-radius:5px;
+        font-size:15px
+    }
+    h2{
+        color:white
+    }
+    
+</style>
+</head>
+<body>
+    
+    <nav>
+        <label class="logo">Hello User</label>
+        <ul>
+            <li><a class='active' href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <br>
+    <center><h2>You have done SignUp Successfully,Please Login here. . .</h2><br><br>
+    <center>
+    <fieldset>
+        <legend>Login Here. . . .</legend><br><br>
+            <form action="" method="POST">
+                <label for="">Enter Username *</label><br><br>
+                <input type="text" name="uname" required><br><br>
+    
+                <label for="">Enter Password *</label><br><br>
+                <input type="password" name="pwd" required><br><br>
+
+                <input type="submit" value="Login" style="color:white;background-color:#34495e;width:100px;font-size:15px;"><br><br>
+                <h4 style="color:white">Don't have an account?<a href="" style="color:white;display:block;background-color:blue;width:60px;">SignUp</a></h4><br><br>
+            </form>
+    </fieldset>
+</center>
+    
+</body>
+</html>

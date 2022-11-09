@@ -1,0 +1,357 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE WEBPAGE</title>
+    <link rel="stylesheet" href="{% static 'css\styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="{% static 'images\ecommerce logo.jpg' %}" width="150px">
+            </div>
+            <nav>
+                <ul class="icon">
+                    <li><a href="homePage"><i class="fa fa-home">&nbsp;&nbsp;</i>Home</a></li>
+                    <li><a href=""><i class="fa fa-cart-arrow-down">&nbsp;&nbsp;</i>Products</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href=""><i class="fa fa-phone">&nbsp;&nbsp;</i>Contact Us</a></li>
+                    <li><a href="usersignup" ><i class="fa fa-user-plus">&nbsp;&nbsp;</i>SignUp</a></li>
+                    <li><a href="userloging" ><i class="fa fa-sign-in">&nbsp;&nbsp;</i>Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <h1>LOVE YOUR BODY,FEED YOUR SOUL,<br>DRINK YOUR JUICE!</h1>
+            <p> "Drinking freshly made juices and eating enough whole foods to provide adequate fiber is a &nbsp;sensible approach to a healthful diet." </p>
+            <a href="" class="btn">Explore Now &#8594</a>
+        </div>
+        <!--<div class="col-2">
+            <img src="{% static 'images\bg2.jpg' %}" alt="">
+        </div>-->
+    </div>
+
+    <!--ITEMS-->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="{% static 'images\kiwi juice.jpg' %}">
+                </div>
+                <div class="col-3">
+                    <img src="{% static 'images\straw juice.jpg' %}">
+                </div>
+                <div class="col-3">
+                    <img src="{% static 'images\mango juice.jpg' %}">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="small-container">
+        <h2 class="title">OUR JUICE ITEMS</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\pom juice.jpg' %}"></a>
+                <h4>POMENGRANATE JUICE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.80.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\pine juice.jpg' %}"></a>
+                <h4>PINEAPPLE JUICE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.60.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\orange juice.jpg' %}"></a>
+                <h4>ORANGE JUICE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.70.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\guava juice.jpg' %}"></a>
+                <h4>GUAVA JUICE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.50.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\kiwi juice.jpg' %}"></a>
+                <h4>GUAVA JUICE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.90.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\straw juice.jpg' %}"></a>
+                <h4>GUAVA JUICE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.80.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\grape juice.jpg' %}"></a>
+                <h4>GRAPE JUICE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.80.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\banana juice.jpg' %}"></a>
+                <h4>BANANA JUICE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.60.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\custard juice.jpg' %}"></a>
+                <h4>CUSTARD APPLE JUICE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.80.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\mango juice.jpg' %}"></a>
+                <h4>GUAVA JUICE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.70.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\wm juice.jpg' %}"></a>
+                <h4>WATERMELEON JUICE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.70.00</p>
+            </div>
+
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\sapota juice.jpg' %}"></a>
+                <h4>SAPOTA JUICE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.70.00</p>
+            </div>
+        </div>
+
+        <h2 class="title">OUR MILK SHAKES</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\ch shake.jpg' %}"></a>
+                <h4>CHOCOLATE MILK SHAKE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.100.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\vanm shake.jpg' %}"></a>
+                <h4>VANILLA MILK SHAKE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.90.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\drym shake.jpg' %}"></a>
+                <h4>DRY FRUIT MILK SHAKE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.120.00</p>
+            </div>
+            <div class="col-4">
+                <a href=""><img src="{% static 'images\stm shake.jpg' %}"></a>
+                <h4>STRAWBERRY MILK SHAKE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs.100.00</p>
+            </div>
+        </div>
+    </div>
+    <!--Quote-->
+    <div class="exclusive">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <a href=""><img src="{% static 'images\m shake.jpg' %}" class="exclusive-img"></a>
+                </div>
+                <div class="col-2">
+                    <h2>ABOUT MILK SHAKE</h2><br>
+                    <small>
+                        “If I can't suck your milkshake through a straw,<br>it's not a milkshake--it's a glass of ice cream.”<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--Bill Maher
+                    </small><br>
+                    <a href="" class="btn">Try Now&#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Testimonial-->
+<hr>
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>“If I can't suck your milkshake through a straw,<br>it's not a milkshake--it's a glass of ice cream.”<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--Bill Maher</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="{% static 'images\fm.jpg' %}" >
+                    <h3>Sean Parker</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>“If I can't suck your milkshake through a straw,<br>it's not a milkshake--it's a glass of ice cream.”<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--Bill Maher</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="{% static 'images\male.jpg' %}" >
+                    <h3>Mike Smith</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>“If I can't suck your milkshake through a straw,<br>it's not a milkshake--it's a glass of ice cream.”<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--Bill Maher</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="{% static 'images\female.jpg' %}" >
+                    <h3>Mabel Joe</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--brands-->
+    <div class="brands">
+        <center><h2 class="title">OUR BRAND PARTNERS</h2></center>
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="{% static 'images\bnatural.jpg' %}">
+                </div>
+                <div class="col-5">
+                    <img src="{% static 'images\alchemist.png' %}">
+                </div>
+                <div class="col-5">
+                    <img src="{% static 'images\paperboat.jpg' %}">
+                </div>
+                <div class="col-5">
+                    <img src="{% static 'images\real.jpg' %}">
+                </div>
+                <div class="col-5">
+                    <img src="{% static 'images\tropicana.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
